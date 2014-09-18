@@ -4,20 +4,26 @@
 var program = require('commander');
 var fs      = require('fs');
 var os      = require('os');
-var config  = require('./lib/config');
-var server  = require('./lib/server');
+var config  = require('./config');
+var Server  = require('./lib/server');
 package = require("./package");
 
-program
-  .version('0.0.1')
-  .option('-p, --peppers', 'Add peppers')
-  .option('-P, --pineapple', 'Add pineapple')
-  .option('-b, --bbq', 'Add bbq sauce')
-  .option('-c, --cheese [type]', 'Add the specified type of cheese [marble]', 'marble')
-  .parse(process.argv);
+//program
+  //.version('0.0.1')
+  //.option('-p, --peppers', 'Add peppers')
+  //.option('-P, --pineapple', 'Add pineapple')
+  //.option('-b, --bbq', 'Add bbq sauce')
+  //.option('-c, --cheese [type]', 'Add the specified type of cheese [marble]', 'marble')
+  //.parse(process.argv);
 
-console.log('you ordered a pizza with:');
-if (program.peppers) console.log('  - peppers');
-if (program.pineapple) console.log('  - pineapple');
-if (program.bbq) console.log('  - bbq');
-console.log('  - %s cheese', program.cheese);
+//console.log('you ordered a pizza with:');
+//if (program.peppers) console.log('  - peppers');
+//if (program.pineapple) console.log('  - pineapple');
+//if (program.bbq) console.log('  - bbq');
+//console.log('  - %s cheese', program.cheese);
+
+
+
+server = new Server(config);
+
+server.run();
