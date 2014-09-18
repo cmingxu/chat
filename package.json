@@ -1,0 +1,14 @@
+{
+  "name": "chat",
+  "version": "0.0.1",
+  "description": "server side of a chat server",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies":
+    {"commander": "2.3.0"},
+  "devDependencies": {},
+  "author": "cmingxu",
+  "license": "ISC"
+}

@@ -1,0 +1,30 @@
+send_message:
+  from [int]
+  to  [int]
+  type [string]
+  content [string]
+
+list_message:
+  last_sync [datetime]
+
+register:
+  name [string]
+  password [string]
+
+login:
+  name [string]
+  password [string]
+
+logout:
+
+friend_request:
+  user_id [int]
+
+accept_request:
+  user_id [int]
+
+user_search:
+  content [string]
+
+ping:
+pong:
