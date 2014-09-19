@@ -2,7 +2,7 @@
 
   * Client For Testing purpose
   * Ping Pong protocol pass
-  * User Session Wrapper  
   * Redis Mysql Test
+  * User Session Wrapper  
   * Message Timeline
   * Server Startup - forever maybe - but TBD

@@ -1,5 +1,7 @@
 CREATE DATABASE chat;
 
+USE chat;
+
 -- users
 CREATE TABLE users(
   id int(20),
@@ -17,10 +19,10 @@ CREATE TABLE login_log(
   id int(20),
   user_id int(20),
   login_at timestamp,
-  ip timestamp
+  ip timestamp,
   primary key(id),
   index index_user_id (user_id)
-)
+);
 
 -- friendship
 CREATE TABLE friendship(
@@ -30,4 +32,4 @@ CREATE TABLE friendship(
   status char(20),
   request_at timestamp,
   accept_at timestamp
-)
+);
