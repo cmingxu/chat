@@ -28,3 +28,11 @@ user_search:
 
 ping:
 pong:
+
+notice:
+  type: [string]
+  message: [string]
+
+error: 
+  type: [string]
+  message: [string]
