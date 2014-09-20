@@ -4,5 +4,6 @@
   "mysql_url": "localhost:3306",
   "mysql_user": "root",
   "mysql_pass": "",
-  "redis_url": "localhost:6379"
+  "redis_url": "localhost:6379",
+  "database":  "chat"
 }
