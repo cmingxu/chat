@@ -6,3 +6,8 @@
   * User Session Wrapper  
   * Message Timeline
   * Server Startup - forever maybe - but TBD
+  * Server Cleanup
+    
+     - close connection if message format invalid   
+  
+     
