@@ -24,10 +24,15 @@ package = require("./package");
 
 
 
-server = new Server(config);
-
-server.run();
+Server.instance(config).run()
 
 process.on('SIGINT', function () {
   server.shutdown();
+  process.exit(0);
+});
+
+process.on('USR1', function () {
+  Server.instance().eachSession(function (s) {
+    console.log(s.info());
+  });
 });
