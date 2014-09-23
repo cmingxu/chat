@@ -4,6 +4,7 @@
   * ~~ Ping Pong protocol pass ~~
   * Redis Mysql Test
   * User Session Wrapper  
+  * Router
   * Message Timeline
   * Server Startup - forever maybe - but TBD
   * Server Cleanup

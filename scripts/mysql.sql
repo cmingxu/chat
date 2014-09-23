@@ -33,3 +33,21 @@ CREATE TABLE friendship(
   request_at timestamp,
   accept_at timestamp
 );
+
+-- group
+CREATE TABLE groups(
+  id int(20),
+  user_id int(20),
+  name varchar(255),
+  created_at timestamp,
+  primary key(id)
+
+);
+
+-- user group 
+CREATE TABLE users_groups(
+  id int(20),
+  user_id int(20),
+  group_id int(20),
+  created_at timestamp
+);
