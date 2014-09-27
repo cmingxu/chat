@@ -26,8 +26,18 @@ accept_request:
 user_search:
   content [string]
 
+join_group:
+  group_id [int]
+
+quit_group:
+  group_id [int]
+
 ping:
 pong:
+
+response:
+  result: [boolean]
+  msg: [string]
 
 notice:
   type: [string]
